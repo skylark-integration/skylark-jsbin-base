@@ -1,8 +1,9 @@
 define([
   "skylark-langx-ns",
   "skylark-langx-objects",
-  "skylark-jquery"
-],function(skylark,objects,$){
+  "skylark-jquery",
+  "./storage"
+],function(skylark,objects,$,store){
   'use strict';
 
   var jsbin = skylark.attach("intg.jsbin");
