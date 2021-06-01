@@ -631,6 +631,14 @@ define('skylark-jsbin-base/jsbin',[
   jsbin.debounceAsync = debounceAsync;
   jsbin.objectValue = objectValue;
 
+  //moved from chrome/esc.js
+  jsbin.loginVisible = false,
+  jsbin.dropdownOpen = false,
+  jsbin.keyboardHelpVisible = false,
+  jsbin.urlHelpVisible = false,
+  jsbin.sideNavVisible = false,
+  jsbin.infocardVisible = false;
+
   return jsbin;
 
 });
