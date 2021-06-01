@@ -446,10 +446,12 @@ define([
   })();
 
   jsbin.$document = $document;
+  jsbin.$body = $body;
   jsbin.$window = $window;
   jsbin.throttle = throttle;
   jsbin.escapeHTML = escapeHTML;
-
+  jsbin.debounceAsync = debounceAsync;
+  jsbin.objectValue = objectValue;
 
   return jsbin;
 
