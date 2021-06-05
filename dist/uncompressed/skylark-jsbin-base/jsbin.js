@@ -318,7 +318,8 @@ define([
     return value;
   }
 
-
+/*
+  // moved to outer
   var $window = $(window),
       $body = $('body'),
       $document = $(document),
@@ -444,10 +445,10 @@ define([
 
 
   })();
-
-  jsbin.$document = $document;
-  jsbin.$body = $body;
-  jsbin.$window = $window;
+*/
+  jsbin.$document = $(document);
+  jsbin.$body = $('body');
+  jsbin.$window = $(window);
   jsbin.throttle = throttle;
   jsbin.escapeHTML = escapeHTML;
   jsbin.debounceAsync = debounceAsync;
